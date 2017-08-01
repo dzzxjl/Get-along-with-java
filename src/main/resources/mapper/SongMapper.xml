@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dzzxjl.dao.SongDao">
+    <resultMap id="Song" type="com.dzzxjl.pojo.Song">
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="song_name" property="songName" jdbcType="VARCHAR" />
+        <result column="song_singer" property="songSinger" jdbcType="VARCHAR" />
+        <result column="song_address" property="songAddress" jdbcType="VARCHAR" />
+    </resultMap>
+    <select id="selectSong" resultMap="Song">
+        select * from song where id = #{id}
+    </select>
+</mapper>
