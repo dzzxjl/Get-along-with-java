@@ -27,7 +27,9 @@ public class SortTest {
 //        list.add(7);
 //        list.add(3);
 //        list.add(2);
+        long start = System.nanoTime(); //纳秒
         bubbleSort(array);
+        System.out.println(System.nanoTime() - start);
         for (Integer i : array){
             System.out.println(i);
         }

@@ -11,11 +11,7 @@ public class Main {
 //        port(8080);
 //        get("/hello",(req,res) -> "Hello World");
 //        get("/test/:name",(req,res) -> "Hello " + req.params(":name") + req.ip());
-        int a = 5;
-        Object object = new Object();
-        synchronized (object){
-
-        }
+        ClassLoader.
     }
 
 }
