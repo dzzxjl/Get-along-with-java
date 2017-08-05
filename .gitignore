@@ -1,0 +1,4 @@
+# 是Android Studio / Intellij IDEA 工程打开以后生成的工作环境配置文件夹
+.idea
+# 文件为Android Studio / Intellij IDEA 为每一个module 生成的配置文件
+.iml
