@@ -1,4 +1,4 @@
-package com.dzzxjl.ser;
+package com.dzzxjl.serialize;
 
 import java.io.*;
 
