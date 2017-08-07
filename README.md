@@ -17,7 +17,7 @@ java特性实践与java框架实践
 - 
 
 ### 序列化
-- transient
+- transient（添加此关键字将隐藏相应字段信息）
 
 ### 泛型
 

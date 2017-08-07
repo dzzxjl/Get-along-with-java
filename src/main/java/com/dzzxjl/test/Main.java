@@ -8,6 +8,19 @@ import static spark.Spark.get;
 import static spark.Spark.port;
 
 
+class A {
+    int a;
+    A(int a ) {
+        this.a = a;
+    }
+}
+
+class B extends A {
+    B(int a) {
+        super(a);
+    }
+}
+
 public class Main implements Serializable{
 
     public static void main(String[] args) {
@@ -15,10 +28,9 @@ public class Main implements Serializable{
 //        get("/hello",(req,res) -> "Hello World");
 //        get("/test/:name",(req,res) -> "Hello " + req.params(":name") + req.ip());
 
-        int i = 5;
-        long j = 6;
-//        i = i + j;
-        i+=j; //使用变量i的type
+        final int a;
+        a = 5;
+        System.out.println(a);
 
     }
 
