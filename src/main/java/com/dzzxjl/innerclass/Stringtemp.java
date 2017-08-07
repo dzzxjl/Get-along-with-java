@@ -1,4 +1,4 @@
-package com.dzzxjl.innerclasstest;
+package com.dzzxjl.innerclass;
 
 public class Stringtemp {
     private String string;

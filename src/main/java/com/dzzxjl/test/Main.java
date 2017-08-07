@@ -14,8 +14,11 @@ public class Main implements Serializable{
 //        port(8080);
 //        get("/hello",(req,res) -> "Hello World");
 //        get("/test/:name",(req,res) -> "Hello " + req.params(":name") + req.ip());
-        Formatter f = new Formatter();
-        System.out.println(f.format("hello, %s ","world"));
+
+        int i = 5;
+        long j = 6;
+//        i = i + j;
+        i+=j; //使用变量i的type
 
     }
 
