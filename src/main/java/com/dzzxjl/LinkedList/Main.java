@@ -7,6 +7,7 @@ class ListNode {
     ListNode(int x) { val = x; }
 }
 public class Main {
+    public static final int MAX_SIE = 10000;
     static public ListNode removeElements(ListNode head, int val) {
         if (head == null){
             return null;
@@ -30,6 +31,8 @@ public class Main {
     }
 
     public static void main(String[] args) {
+        System.out.println(MAX_SIE);
+//        int[] arrat = new int[];
         ListNode head = new ListNode(1);
         ListNode node1 = new ListNode(2);
         ListNode node2 = new ListNode(6);
