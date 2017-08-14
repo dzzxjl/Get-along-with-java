@@ -30,6 +30,11 @@ public class Main {
                 .orElse("Unkown");
     }
     public static void main(String[] args) {
-
+        Optional<String> string = Optional.of("hello");
+        string.ifPresent(System.out::println);
+//        Optional<String> nullString  = Optional.of(null);
+        Optional empty = Optional.ofNullable(null);
+//        nullString.ifPresent(System.out::println);
+        empty.ifPresent(System.out::println);
     }
 }
