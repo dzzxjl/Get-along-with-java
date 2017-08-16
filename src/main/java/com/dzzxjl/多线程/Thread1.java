@@ -4,7 +4,7 @@ class MyThread extends Thread {
     @Override
     public void run() {
         System.out.println("我是继承来的thread，不过只能单继承");
-
+//        wait();
     }
 }
 
@@ -19,12 +19,7 @@ public class Thread1 implements Runnable{
     }
 
     public static void main(String[] args) {
-        Thread1 thread = new Thread1();
-        Thread thread1 = new Thread(thread, "A");
-        Thread thread2 = new Thread(thread, "B");
-        MyThread thread3 = new MyThread();
-        thread1.start();
-        thread2.start();
-        thread3.start();
+        MyThread myThread = new MyThread();
+
     }
 }
