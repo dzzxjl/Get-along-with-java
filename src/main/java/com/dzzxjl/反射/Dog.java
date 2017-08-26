@@ -7,6 +7,9 @@ public class Dog {
     private String name;
     private Integer age;
 
+    Dog() {
+        System.out.println("haha");
+    }
     public String getName() {
         return name;
     }
@@ -26,12 +29,24 @@ public class Dog {
 
     public static void main(String[] args) {
         Dog dog = new Dog();
+
+        dog.setName("dzzxjl");
         dog.setAge(15);
         Class<?> clazz = dog.getClass();
         try {
+            Method[] methods = clazz.getMethods();
+            for (Method method : methods) {
+                System.out.println(method);
+            }
+//            System.out.println(clazz.getConstructor());
             Method method = clazz.getMethod("getAge");
+            Method method1 = clazz.getMethod("getName");
+            System.out.println(method.getParameterCount());
+            System.out.println(method.getReturnType());
             try {
                 method.invoke(dog);
+                method1.invoke(dog);
+                System.out.println(method.invoke(dog));
             } catch (IllegalAccessException e) {
                 e.printStackTrace();
             } catch (InvocationTargetException e) {
