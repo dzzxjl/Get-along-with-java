@@ -4,7 +4,8 @@ import java.util.*;
 
 public class main {
     public static void main(String[] args) {
-        // Collections是工具类，包含很多静态方法
+        String a = "test";
+        // Colections是工具类，包含很多静态方法
 
         // Collection是接口
 //        Collection collection = new ArrayList<>();
