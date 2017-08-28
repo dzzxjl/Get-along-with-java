@@ -1,11 +1,13 @@
 package com.dzzxjl.反射;
 
+import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 public class Dog {
     private String name;
     private Integer age;
+    public Integer id = 1;
 
     Dog() {
         System.out.println("haha");
@@ -41,6 +43,7 @@ public class Dog {
 //            System.out.println(clazz.getConstructor());
             Method method = clazz.getMethod("getAge");
             Method method1 = clazz.getMethod("getName");
+//            Field field = clazz.getField("id");
             System.out.println(method.getParameterCount());
             System.out.println(method.getReturnType());
             try {
