@@ -4,6 +4,10 @@ java特性实践与java框架实践
 
 ## java特性
 
+### String
+* String与StringBuilder与StringBuffer
+* String为什么设计成不可变的？安全性
+
 ### 集合框架（继承关系、图）
 * List
     * ArrayList
@@ -15,13 +19,14 @@ java特性实践与java框架实践
     * ConcurrentHashMap1.7
     * TreeMap(红黑树实现)
 * Set
+    * HashSet
 ### 多线程
 
 ### 锁与同步——类比赛马模型
 
-* synchronized——（锁对象、锁方法块）
-* volatile变量修饰符（程度较轻的 synchronized）
-*  
+* synchronized（锁对象、锁方法块）
+* volatile变量修饰符（程度较轻的 synchronized）（内存）
+* 
 
 ### 序列化
 * transient（添加此关键字将隐藏相应字段信息）
@@ -40,7 +45,17 @@ java特性实践与java框架实践
 
 ### static关键字
 
+### final关键字
+* final修饰的类不可以被继承
+* final修饰的字段创建以后不可以改变
+
 ### IO体系
+* 键盘输入屏幕输出
+* 文件读写
+* 数据库读写
+* 网络读写
+
+### 注解
 
 ---
 ## java框架
