@@ -1,8 +1,8 @@
-package com.dzzxjl;
+package com.dzzxjl.文件IO;
 
 import java.io.*;
 
-public class 文件IO {
+public class main {
     public static void main(String[] args) throws IOException{
         // IO源
         File file = new File("/Users/dzzxjl/Desktop/run.sh");
