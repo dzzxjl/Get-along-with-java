@@ -2,7 +2,7 @@ package com.dzzxjl.文件IO;
 
 import java.io.*;
 
-public class main {
+public class Main {
     public static void main(String[] args) throws IOException{
         // IO源
         File file = new File("/Users/dzzxjl/Desktop/run.sh");
